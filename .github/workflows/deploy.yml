@@ -1,10 +1,10 @@
 name: Deploy to S3
 
-# Runs automatically on every push to main, and can also be triggered manually
-# from the Actions tab in GitHub.
+# This workflow is disabled by default (manual trigger only). The real
+# deploy process is local -> S3 directly, done by hand outside of GitHub
+# Actions -- this file is kept here in case an automated deploy is wanted
+# later, but it won't run on every push and won't send failure emails.
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 jobs:
