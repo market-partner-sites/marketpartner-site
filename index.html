@@ -444,6 +444,7 @@
   @media (max-width:860px){ .stat-row{ grid-template-columns:1fr 1fr; } }
   @media (max-width:560px){ .stat-row{ grid-template-columns:1fr; } }
   .stat-box{ background:var(--brand); color:#fff; border-radius:14px; padding:22px 24px; font-size:17px; font-weight:600; line-height:1.35; }
+  .mobile-break{ display:none; }
 
   /* tighter section spacing on mobile */
   @media (max-width:720px){
@@ -455,6 +456,7 @@
     .trust{ padding:32px 0; }
     .roles{ padding:52px 0; }
     .analytics{ padding:52px 0; }
+    .mobile-break{ display:block; }
   }
 </style>
 </head>
@@ -507,7 +509,7 @@
   <section class="hero">
     <div class="wrap hero-grid">
       <div>
-        <div class="eyebrow"><span class="num">●</span> Marketing &amp; event technology, backed by a team</div>
+        <div class="eyebrow"><span class="num">●</span> Marketing &amp; event technology,<br class="mobile-break"> backed by a team</div>
         <h1>Cutting-edge technology + expert human support</h1>
         <p class="lede">Category-leading technology for exceptional marketing and event assets — paired with the hands-on project management and support that off-the-shelf SaaS leaves you without. Every site runs on a fully editable template, so your team can move fast on content while we keep full control of what matters — your valuable data.</p>
         <div class="cta-row">
