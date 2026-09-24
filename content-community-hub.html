@@ -162,7 +162,6 @@
   .hero-grid{ display:grid; grid-template-columns:1.15fr 0.85fr; gap:60px; align-items:center; }
   @media (max-width:900px){ .hero-grid{ grid-template-columns:1fr; gap:44px; } .hero-panel{ aspect-ratio:4/2.17; } }
   .hero h1{ font-size:clamp(36px,4.8vw,58px); line-height:1.04; color:var(--brand-ink); margin-top:18px; }
-  .hero h1.ink{ color:var(--ink); }
   .hero .lede{ margin-top:22px; font-size:19px; color:var(--ink-soft); max-width:46ch; }
   .best-for{ margin-top:16px; font-size:14px; color:var(--ink-faint); }
   .hub-list{ margin-top:28px; display:flex; flex-direction:column; gap:16px; max-width:74ch; }
@@ -302,8 +301,12 @@
     <div class="wrap hero-grid">
       <div>
         <div class="eyebrow">Two hubs, one platform</div>
-        <h1 class="ink" style="max-width:26ch;">Whether you're bringing someone into your company, or building a network around it — there's a hub for that.</h1>
+        <h1 style="max-width:26ch;">Whether you're bringing someone into your company, or building a network around it — there's a hub for that.</h1>
         <p class="lede">Pick the one built for what you're trying to do, or run both from the same platform.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="mailto:talk@marketpartner.com">Talk to our team <span class="btn-arrow">→</span></a>
+          <a class="btn btn-ghost" href="#onboarding">See how it works</a>
+        </div>
       </div>
       <div class="hero-panel" aria-hidden="true">
         <div class="grid-lines"></div>
@@ -316,7 +319,7 @@
     </div>
   </section>
 
-  <section class="sec alt" id="onboarding">
+  <section class="sec" id="onboarding">
     <div class="wrap">
       <div class="eyebrow"><span class="num">●</span> Onboarding hub</div>
       <h2>One home for your new hires — built for their first 90 days, not just their first one.</h2>
@@ -350,6 +353,16 @@
         <li><svg class="chev" viewBox="0 0 10 10" fill="none"><path d="M3 1.5l4.5 3.5L3 8.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>Built with AI, set up by us</b> — like everything we build, we'll work alongside your team through planning and launch, not hand you a login and disappear.</span></li>
       </ul>
       <a class="btn btn-accent" href="mailto:talk@marketpartner.com">Talk to us about your content &amp; community hub <span class="btn-arrow">→</span></a>
+    </div>
+  </section>
+
+  <section class="trust">
+    <div class="wrap trust-grid">
+      <div class="trust-item"><svg viewBox="0 0 24 24" fill="none"><path d="M13 2L4 14h7l-1 8 10-13h-8l1-7z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg> Live in minutes</div>
+      <div class="trust-item"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3.5l1.8 3.7 4 .6-2.9 2.9.7 4-3.6-1.9-3.6 1.9.7-4-2.9-2.9 4-.6L12 3.5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg> GDPR compliant</div>
+      <div class="trust-item"><svg viewBox="0 0 24 24" fill="none"><path d="M4 19V5M4 19h16M8 15l3-4 3 3 4-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Real-time reporting</div>
+      <div class="trust-item"><svg viewBox="0 0 24 24" fill="none"><circle cx="8.5" cy="8" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M3 19c0-3 2.5-5 5.5-5S14 16 14 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="17" cy="8.5" r="2.4" stroke="currentColor" stroke-width="1.5"/><path d="M15.5 13.2c2.6.1 4.5 1.9 4.5 4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg> Onsite &amp; remote support</div>
+      <div class="trust-item"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3.5l1.8 3.7 4 .6-2.9 2.9.7 4-3.6-1.9-3.6 1.9.7-4-2.9-2.9 4-.6L12 3.5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg> Fully embeddable</div>
     </div>
   </section>
 
