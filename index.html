@@ -311,6 +311,7 @@
   @media (max-width:900px){ .service-grid{ grid-template-columns:1fr; gap:40px; } .visual{ aspect-ratio:4/2.17; max-width:none; } }
   .service-grid.rev{ direction:rtl; }
   .service-grid.rev > *{ direction:ltr; }
+  @media (max-width:900px){ .service-grid.rev{ direction:ltr; } .service-grid.rev .visual{ order:2; } }
   .service h3{ font-size:clamp(26px,3vw,36px); margin-top:14px; max-width:34ch; text-wrap:pretty; }
   .service .sub{ margin-top:16px; color:var(--ink-soft); max-width:60ch; font-size:16px; }
   .service .feature-list{ margin-top:26px; display:flex; flex-direction:column; gap:13px; }
@@ -598,7 +599,7 @@
   <!-- AI TEMPLATE CONTROL -->
   <section class="roles" id="ai-control">
     <div class="wrap">
-      <div class="eyebrow"><span class="num">●</span> Built with AI, controlled by you</div>
+      <div class="eyebrow"><span class="num">●</span> Built with total flexibility, controlled by you</div>
       <h2>Harness your power while keeping control of what matters.</h2>
       <p class="sub">Our sites and apps are built as editable templates, with placeholders we define for the content that changes. A technical site owner can shape the template itself directly - layout, structure, new functionality - while the wider team updates agendas, speakers and registration content through a simple CMS, with no access to the underlying build and nothing they can accidentally break. You get the speed of AI-assisted development without your customer data, or your site, ever being at risk.</p>
       <div class="roles-grid">
@@ -613,11 +614,11 @@
           </ul>
         </div>
         <div class="role-card">
-          <div class="kicker">Event manager</div>
+          <div class="kicker">Content management</div>
           <h3>Update critical information</h3>
           <p>Updates the content that changes most — agendas, speakers, sessions, registration details — without ever touching the template underneath.</p>
           <ul>
-            <li><svg class="chev" viewBox="0 0 10 10" fill="none"><path d="M3 1.5l4.5 3.5L3 8.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span> <b>No AI access</b> and no way to touch the build</span></li>
+            <li><svg class="chev" viewBox="0 0 10 10" fill="none"><path d="M3 1.5l4.5 3.5L3 8.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span> <b>More restricted access</b> and no way to touch the build</span></li>
             <li><svg class="chev" viewBox="0 0 10 10" fill="none"><path d="M3 1.5l4.5 3.5L3 8.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Complex, multi-track agendas built and rebuilt in minutes</li>
             <li><svg class="chev" viewBox="0 0 10 10" fill="none"><path d="M3 1.5l4.5 3.5L3 8.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Nothing to break — restricted to exactly what they need</li>
           </ul>
@@ -823,10 +824,11 @@
         <h3>Feedback forms, live in minutes</h3>
         <ul class="feature-list">
           <li><svg class="chev" viewBox="0 0 10 10" fill="none"><path d="M3 1.5l4.5 3.5L3 8.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Build fully branded survey and feedback forms fast</li>
+          <li><svg class="chev" viewBox="0 0 10 10" fill="none"><path d="M3 1.5l4.5 3.5L3 8.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span> <b>Integrates into every Market Partner solution</b> — drop forms straight into your event app, registration site, touchscreens or content &amp; community hub</span></li>
           <li><svg class="chev" viewBox="0 0 10 10" fill="none"><path d="M3 1.5l4.5 3.5L3 8.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> One workflow, with custom roles for teams and partners</li>
           <li><svg class="chev" viewBox="0 0 10 10" fill="none"><path d="M3 1.5l4.5 3.5L3 8.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Delivered globally on a fast CDN</li>
-          <li><svg class="chev" viewBox="0 0 10 10" fill="none"><path d="M3 1.5l4.5 3.5L3 8.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> GDPR-compliant, with enterprise-grade security</li>
-          <li><svg class="chev" viewBox="0 0 10 10" fill="none"><path d="M3 1.5l4.5 3.5L3 8.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Real-time reporting by respondent, with usage analytics</li>
+          <li><svg class="chev" viewBox="0 0 10 10" fill="none"><path d="M3 1.5l4.5 3.5L3 8.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span> <b>GDPR-compliant, with enterprise-grade security</b> — data encrypted and stored securely on the back end</span></li>
+          <li><svg class="chev" viewBox="0 0 10 10" fill="none"><path d="M3 1.5l4.5 3.5L3 8.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span> <b>Real-time reporting by respondent</b> — with usage analytics tracked automatically on the back end</span></li>
         </ul>
       </div>
     </div>
