@@ -170,6 +170,8 @@
   .hub-list li .chev{ flex:none; margin-top:6px; width:11px; height:11px; }
   .hub-list li .chev path{ stroke:var(--accent); }
   .hub-list li b{ color:var(--ink); font-weight:700; }
+  .hub-list li a{ color:var(--brand-ink); font-weight:600; text-decoration:underline; text-underline-offset:2px; }
+  .hub-list li a:hover{ color:var(--accent); }
   .sec .best-for + .hub-list, .sec .hub-list{ margin-bottom:36px; }
   .hero .cta-row{ margin-top:34px; display:flex; gap:14px; flex-wrap:wrap; }
   .hero-panel{ position:relative; aspect-ratio:4/3.1; border-radius:28px; background: radial-gradient(circle at 30% 24%, color-mix(in srgb, var(--brand) 22%, transparent), transparent 60%), radial-gradient(circle at 76% 74%, color-mix(in srgb, var(--accent) 20%, transparent), transparent 55%), var(--bg-raised); border:1px solid var(--border); overflow:hidden; }
@@ -338,6 +340,7 @@
       <h2>One home for your content and your community — not just your events.</h2>
       <p class="best-for">Best for: teams building and growing a network of contacts, customers or partners.</p>
       <ul class="hub-list">
+        <li><svg class="chev" viewBox="0 0 10 10" fill="none"><path d="M3 1.5l4.5 3.5L3 8.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>One of two hubs we build</b> — this one's for your audience outside the business: prospects, customers and partners. Bringing someone in instead? Our <a href="#onboarding">Onboarding Hub</a> is built for that.</span></li>
         <li><svg class="chev" viewBox="0 0 10 10" fill="none"><path d="M3 1.5l4.5 3.5L3 8.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>A single library for everything</b> — documents, links and video in one place, with real-time analytics on who's viewing what.</span></li>
         <li><svg class="chev" viewBox="0 0 10 10" fill="none"><path d="M3 1.5l4.5 3.5L3 8.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>An ongoing hub, not a one-off microsite</b> — stays live long after the event ends, so your audience has somewhere to come back to.</span></li>
         <li><svg class="chev" viewBox="0 0 10 10" fill="none"><path d="M3 1.5l4.5 3.5L3 8.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>A real community, not just a contact list</b> — member profiles and connections, so people can find each other, not just receive from you.</span></li>
