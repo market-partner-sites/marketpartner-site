@@ -294,7 +294,7 @@
   .strip{ padding:64px 0; border-bottom:1px solid var(--border-soft); }
   .strip .lead{ font-size:26px; font-weight:800; color:var(--ink); text-align:center; margin-bottom:34px; letter-spacing:-0.01em; }
   .strip-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:28px 24px; }
-  @media (max-width:640px){ .strip-grid{ grid-template-columns:repeat(2,1fr); gap:28px 16px; } .strip-item .ic{ width:clamp(120px,38vw,172px); height:clamp(120px,38vw,172px); } }
+  @media (max-width:640px){ .strip-grid{ grid-template-columns:repeat(2,1fr); gap:22px 12px; } .strip-item{ padding:10px 2px; } .strip-item .ic{ width:100%; max-width:200px; height:auto; aspect-ratio:1; } }
   .strip-item{ display:flex; flex-direction:column; align-items:center; gap:18px; padding:14px 6px; text-align:center; }
   .strip-item .ic{ width:clamp(84px,20vw,172px); height:clamp(84px,20vw,172px); display:flex; align-items:center; justify-content:center; border-radius:28%; background:var(--bg-alt); color:var(--brand-ink); transition:transform .2s ease, background-color .2s ease; }
   .strip-item:hover .ic{ transform:scale(1.06); background:var(--border-soft); }
