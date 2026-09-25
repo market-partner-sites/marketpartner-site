@@ -311,6 +311,7 @@
   .check-list li{ display:flex; gap:14px; align-items:flex-start; font-size:15.5px; color:var(--ink); }
   .check-list .chev{ flex:none; margin-top:5px; width:11px; height:11px; }
   .check-list .chev path{ stroke:var(--accent); }
+  .check-list li.mobile-only{ display:none; }
 
   /* ---------- services ---------- */
   .service{ padding:88px 0; border-top:1px solid var(--border-soft); }
@@ -471,6 +472,8 @@
     .mobile-break{ display:block; }
     .mobile-only{ display:block; }
     .desktop-only{ display:none; }
+    .check-list li.mobile-only{ display:flex; }
+    .check-list li.desktop-only{ display:none; }
   }
 </style>
 </head>
@@ -582,13 +585,18 @@
         <p class="sub">Every registration site, form, app and piece of content runs on the same Market Partner core — so nothing lives in a separate tool, and nothing needs a separate login.</p>
       </div>
       <ul class="check-list">
-        <li><svg class="chev" viewBox="0 0 12 12" fill="none"><path d="M4 2l5 4-5 4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Built entirely in your brand — colours, type, tone, all of it</li>
-        <li><svg class="chev" viewBox="0 0 12 12" fill="none"><path d="M4 2l5 4-5 4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> One login covers registrations, forms, apps and content</li>
-        <li><svg class="chev" viewBox="0 0 12 12" fill="none"><path d="M4 2l5 4-5 4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Custom roles keep teams and partners scoped to what they need</li>
-        <li><svg class="chev" viewBox="0 0 12 12" fill="none"><path d="M4 2l5 4-5 4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Powerful email technology built in — confirmations, reminders and campaigns, all from the same platform</li>
-        <li><svg class="chev" viewBox="0 0 12 12" fill="none"><path d="M4 2l5 4-5 4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Delivered on a global CDN, fast wherever your audience is</li>
-        <li><svg class="chev" viewBox="0 0 12 12" fill="none"><path d="M4 2l5 4-5 4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> GDPR-compliant, with enterprise-grade security throughout</li>
-        <li><svg class="chev" viewBox="0 0 12 12" fill="none"><path d="M4 2l5 4-5 4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Real-time analytics from first click to final badge scan</li>
+        <li class="desktop-only"><svg class="chev" viewBox="0 0 12 12" fill="none"><path d="M4 2l5 4-5 4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Built entirely in your brand — colours, type, tone, all of it</li>
+        <li class="mobile-only"><svg class="chev" viewBox="0 0 12 12" fill="none"><path d="M4 2l5 4-5 4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Built entirely in your brand — colours, type and tone</li>
+        <li class="desktop-only"><svg class="chev" viewBox="0 0 12 12" fill="none"><path d="M4 2l5 4-5 4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> One login covers registrations, forms, apps and content</li>
+        <li class="mobile-only"><svg class="chev" viewBox="0 0 12 12" fill="none"><path d="M4 2l5 4-5 4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> One login for registrations, forms, apps and content</li>
+        <li class="desktop-only"><svg class="chev" viewBox="0 0 12 12" fill="none"><path d="M4 2l5 4-5 4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Custom roles keep teams and partners scoped to what they need</li>
+        <li class="mobile-only"><svg class="chev" viewBox="0 0 12 12" fill="none"><path d="M4 2l5 4-5 4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Custom roles scope teams and partners to what they need</li>
+        <li class="desktop-only"><svg class="chev" viewBox="0 0 12 12" fill="none"><path d="M4 2l5 4-5 4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Powerful email technology built in — confirmations, reminders and campaigns, all from the same platform</li>
+        <li class="mobile-only"><svg class="chev" viewBox="0 0 12 12" fill="none"><path d="M4 2l5 4-5 4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Built-in email tech — confirmations, reminders and campaigns</li>
+        <li class="desktop-only"><svg class="chev" viewBox="0 0 12 12" fill="none"><path d="M4 2l5 4-5 4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Delivered on a global CDN, fast wherever your audience is</li>
+        <li class="desktop-only"><svg class="chev" viewBox="0 0 12 12" fill="none"><path d="M4 2l5 4-5 4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> GDPR-compliant, with enterprise-grade security throughout</li>
+        <li class="desktop-only"><svg class="chev" viewBox="0 0 12 12" fill="none"><path d="M4 2l5 4-5 4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Real-time analytics from first click to final badge scan</li>
+        <li class="mobile-only"><svg class="chev" viewBox="0 0 12 12" fill="none"><path d="M4 2l5 4-5 4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Real-time analytics, from first click to badge scan</li>
       </ul>
     </div>
   </section>
