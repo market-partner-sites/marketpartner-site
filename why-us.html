@@ -169,7 +169,12 @@
   .hero-panel .mark img{ width:100%; height:100%; object-fit:cover; }
   .hero-panel .chip{ position:absolute; z-index:3; background:var(--bg-raised); border:1px solid var(--border); border-radius:12px; padding:10px 14px; box-shadow:var(--shadow); font-family:"IBM Plex Mono",monospace; font-size:12px; color:var(--ink-soft); display:flex; align-items:center; gap:8px; }
   .hero-panel .chip .dot{ width:7px; height:7px; border-radius:50%; background:var(--accent); }
-  .hero-panel .chip.c1{ top:9%; left:8%; } .hero-panel .chip.c2{ bottom:11%; right:7%; }
+  .hero-panel .chip.c1{ top:9%; left:8%; animation:chip-float 5s ease-in-out infinite; }
+  .hero-panel .chip.c2{ bottom:11%; right:7%; animation:chip-float 5s ease-in-out infinite; animation-delay:-2.4s; }
+  @keyframes chip-float{
+    0%, 100%{ translate:0 0; }
+    50%{ translate:0 -8px; }
+  }
   .sec{ padding:88px 0; border-top:1px solid var(--border-soft); }
   .sec.alt{ background:var(--bg-alt); }
   .sec h2{ font-size:clamp(30px,3.6vw,42px); margin-top:14px; max-width:36ch; text-wrap:pretty; }
@@ -258,7 +263,8 @@
   .strip-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:28px 24px; }
   @media (max-width:640px){ .strip-grid{ grid-template-columns:repeat(2,1fr); } }
   .strip-item{ display:flex; flex-direction:column; align-items:center; gap:18px; padding:14px 6px; text-align:center; }
-  .strip-item .ic{ width:clamp(84px,20vw,172px); height:clamp(84px,20vw,172px); display:flex; align-items:center; justify-content:center; border-radius:28%; background:var(--bg-alt); color:var(--brand-ink); }
+  .strip-item .ic{ width:clamp(84px,20vw,172px); height:clamp(84px,20vw,172px); display:flex; align-items:center; justify-content:center; border-radius:28%; background:var(--bg-alt); color:var(--brand-ink); transition:transform .2s ease, background-color .2s ease; }
+  .strip-item:hover .ic{ transform:scale(1.06); background:var(--border-soft); }
   .strip-item .ic svg{ width:50%; height:50%; }
   .strip-item span{ font-size:13.5px; color:var(--ink-soft); line-height:1.3; }
 
